@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    section{
+        border: 2px solid black;
+        height: 38vh;
+        width: fit-content;
+        display: flex;
+        margin: auto;
+    }
+
+    .box {
+        background-color: aquamarine;
+        border: 2px solid black;
+        position: static;   
+        width: 200px;
+        height: 60px;
+        text-align: center;
+        padding: 20px;
+        /* margin: 20px; */
+    }
+    .box1{
+        position: static;
+    }
+    .box2{
+        position: fixed;
+        top: 200px;
+        left: 320px;
+    }
+    .box3{
+        position: absolute;
+        top: 180px;
+        left: 600px;
+        z-index: 1;
+    }
+    .box4{
+        position: relative;
+        top: 90px;
+        left: 150px;
+    }
+    .box5{
+        position: sticky;
+        top: 500px;
+        left: 1100px;
+        z-index: -1;
+
+    }
+</style>
+
+<body>
+    <section>
+            <div class="box box1">
+                <h1>static</h1>
+            </div>
+            <div class="box box2">
+                <h1>fixed</h1>
+            </div>
+            <div class="box box3">
+                <h1>absolute</h1>
+            </div>
+            <div class="box box4">
+                <h1>relative</h1>
+            </div>
+            <div class="box box5">
+                <h1>sticky</h1>
+            </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        position: relative;
+    }
+
+    .top {
+        display: flex;
+        width: 100%;
+        height: 80%;
+    }
+
+    .bottom {
+        width: 80%;
+        height: 100%;
+    }
+
+    .left,
+    .right {
+        width: 50%;
+        height: 100%;
+    }
+
+    .left {
+        background-color: #285984;
+    }
+
+    .right {
+        background-color: #104673;
+    }
+
+    h2 {
+        text-align: center;
+        position: absolute;
+        z-index: 1;
+        color: white;
+        left: 40%;
+        top: 50px;
+    }
+
+    .card-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 15%;
+        top: 30%;
+    }
+
+    .card{
+        background-color: rgb(251, 253, 253);
+        margin: 10px;
+        padding: 50px;
+    }
+    .card:first-child{
+        color: white;
+        background-color: royalblue;
+    }
+</style>
+
+<body>
+    <h2>OUR SERVICES SECTION</h2>
+    <section>
+        <div class="top">
+            <div class="left">
+
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="card-section">
+                <div class="card">
+                    <h1>01</h1>
+                    <h3>Service One</h3>
+                    <p>Lorem ipsum dolor, sit amet <br>consectetur adipisicing elit.<br> fuga aliquid
+                        minus consequatur,<br> dolores facere aliquam adipisci dicta.</p>
+                </div>
+                <div class="card">
+                    <h1>01</h1>
+                    <h3>Service Two</h3>
+                    <p>Lorem ipsum dolor, sit amet <br>consectetur adipisicing elit.<br> fuga aliquid
+                        minus consequatur,<br> dolores facere aliquam adipisci dicta.</p>
+                </div>
+                <div class="card">
+                    <h1>01</h1>
+                    <h3>Service Three</h3>
+                    <p>Lorem ipsum dolor, sit amet <br>consectetur adipisicing elit.<br> fuga aliquid
+                        minus consequatur,<br> dolores facere aliquam adipisci dicta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

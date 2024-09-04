@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'poppins';
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        /* padding: 20px; */
+        height: 60px;
+        align-items: center;
+        background-color: #BAD9F6;
+        border: 2px solid #3f8bd8;
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+    }
+
+    li {
+        margin-left: 50px;
+    }
+
+    button {
+        color: #3f8bd8;
+        background-color: transparent;
+        padding: 10px 20px;
+        border-color: #3f8bd8;
+        border: 1px solid #3f8bd8;
+        outline: none;
+    }
+
+    .sec2 {
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROX_edC14aHEUwREghokVSEFkvGKWRNrrGMQ&s);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 94vh;
+        text-align: center;
+        align-content: center;
+    }
+    .sec2 h1{
+        font-size: 50px;
+    }
+
+    .sec2 p{
+        font-size: 20px;
+    }
+    .btn{
+        color: #D2F4FF;
+        background-color: #3f8bd8;
+        padding: 10px 20px;
+        border: 1px solid #3f8bd8;
+        outline: none;
+        align-items: center;
+        border-radius: 8px;
+        margin-top: 20px;
+    }
+</style>
+
+<body>
+    <section>
+        <div class="nav">
+            <div class="logo">
+                <i class="fa-solid fa-cat fa-2xl"></i><span>Cat</span>
+            </div>
+            <div class="item">
+                <ul>
+                    <li>Overview</li>
+                    <li>Why Cats? Diet</li>
+                    <li>Diet</li>
+                    <li><button>Adopt Meow</button></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="sec2">
+        <h1>Cats Make Life Better</h1>
+        <p>The Key to a happy life is having a cat</p>
+        <button class="btn">Adopt Meow</button>
+    </section>
+</body>
+
+</html>

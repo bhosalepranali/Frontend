@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'poppins';
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        height: 60px;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+    }
+
+    li {
+        margin-left: 50px;
+    }
+
+    p {
+        margin-top: 15px;
+        width: 90%;
+    }
+
+    h3 {
+        font-size: 36px;
+        width: 70%;
+    }
+
+    .fa-magnifying-glass {
+        margin: 20px;
+    }
+
+    .sec2 {
+        display: flex;
+        justify-content: center;
+        width: 94%;
+        height: 90vh;
+        margin: auto;
+        background-color: #F9FAFA;
+    }
+
+    .imgs {
+        width: 680px;
+        /* height: 50%; */
+        margin-top: 100px;
+    }
+
+    .imgs img {
+        width: 100%;
+    }
+
+    .info {
+        align-content: center;
+        align-items: center;
+        width: 500px;
+        padding: 20px;
+        background-color: #F9FAFA;
+    }
+
+    .btn {
+        margin-top: 30px;
+    }
+
+    .btn1,
+    .btn2 {
+        top: 5px;
+        margin: 5px;
+        color: #fff;
+        background-color: #F89646;
+        padding: 10px 40px;
+        outline: none;
+        border: none;
+    }
+
+    .btn1 button:first-child {
+        color: whitesmoke;
+        background-color: transparent;
+        border: 1px solid #f79645;
+
+        button:hover {
+            color: #f79645;
+            background-color: transparent;
+            border: 1px solid #f79645;
+        }
+    }
+
+
+    button:hover {
+        color: #6bb7bd;
+        border: 1px solid #6bb7bd;
+        background-color: transparent;
+    }
+
+    .btn2 {
+        background-color: #6BB7BE;
+    }
+
+    .Furniture {
+        width: 94%;
+        margin: auto;
+    }
+
+    .fur_card {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 40px;
+    }
+
+    .box {
+        text-align: center;
+        align-content: center;
+        background-color: #f7fafa;
+        width: 400px;
+        padding: 10px;
+        /* height: 350px; */
+    }
+
+    .photo img {
+        width: 200px;
+        height: 250px;
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .data {
+        text-align: start;
+        padding: 20px;
+    }
+
+    .content p {
+        width: auto;
+    }
+
+    .content a {
+        text-decoration: none;
+        color: #6BB7BE;
+    }
+
+    .sec4 {
+        width: 94%;
+        margin: auto;
+        height: 70vh;
+        background-color: #F9FAFA;
+    }
+
+    .container {
+        display: flex;
+        margin-top: 80px;
+        height: 60vh;
+        justify-content: center;
+    }
+
+    .img2 {
+        margin-top: 100px;
+        width: 500px;
+        height: 100%;
+    }
+
+    .about h3 {
+        font-size: 40px;
+        text-transform: uppercase;
+    }
+
+    .about {
+        align-content: center;
+        align-items: center;
+        width: 500px;
+        padding: 20px;
+        background-color: #F9FAFA;
+        margin-top: 100px;
+    }
+
+    .btn-1 {
+        margin-top: 30px;
+    }
+
+    .btnone {
+        top: 5px;
+        margin: 5px;
+        color: #fff;
+        background-color: #6BB7BE;
+        padding: 10px 40px;
+        outline: none;
+        border: none;
+    }
+
+    .img2 {
+        width: 680px;
+        height: 50%;
+        margin-top: 100px;
+    }
+
+    .blog {
+        /* display: flex; */
+        width: 94%;
+        margin: auto;
+        height: 100vh;
+    }
+
+    .head {
+        text-align: center;
+        font-size: 26px;
+    }
+
+    .cards {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    .card {
+        width: 400px;
+        height: fit-content;
+        box-shadow: 1px 1px 10px gray;
+    }
+
+    .img-card {
+        width: 400px;
+        height: 250px;
+    }
+
+    .img-card img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .information {
+        padding: 20px;
+    }
+
+    .information h5 {
+        font-size: 26px;
+    }
+
+    .btntwo {
+        margin-top: 20px;
+        color: #fff;
+        background-color: #6BB7BE;
+        padding: 10px 40px;
+        border: none;
+    }
+
+    .testimonial {
+        text-align: center;
+        font-size: 25px;
+        justify-content: center;
+    }
+
+    .testimonial-section {
+        width: 80%;
+        margin: auto;
+        height: 60vh;
+    }
+
+    .testimonial-box {
+        display: flex;
+        margin: auto;
+        width: 80%;
+        border-radius: 10px;
+        padding: 50px;
+        margin: 50px;
+        gap: 50px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .client-img {
+        width: 300px;
+    }
+
+    .client-img img {
+        width: 100%;
+        border: 10px solid #6BB7BE;
+        border-radius: 50%;
+    }
+
+    .card-info h2 {
+        color: #6BB7BE;
+    }
+
+    .contact {
+        width: 90%;
+        margin: auto;
+        height: 90vh;
+        background-color: #F9FAFA;
+        /* justify-content: space-around; */
+    }
+
+    .contacts {
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    .contact-us {
+        gap: 50px;
+        padding: 50px;
+        width: 50%;
+    }
+
+    .contact-us h1 {
+        font-size: 40px;
+    }
+
+    .input-text input,
+    textarea {
+        width: 60%;
+        margin: 10px;
+        padding: 10px;
+        border: none;
+    }
+
+    .btn-submit button {
+        top: 5px;
+        margin: 5px;
+        color: #fff;
+        background-color: #6BB7BE;
+        padding: 10px 40px;
+        outline: none;
+        border: none;
+    }
+
+    button:hover {
+        color: #6bb7bd;
+        border: 1px solid #6bb7bd;
+        background-color: transparent;
+    }
+
+    .map {
+        text-align: center;
+        align-content: center;
+    }
+
+    .footer {
+        width: 90%;
+        margin: auto;
+        /* height: 20vh; */
+        background-color: #000;
+    }
+
+    .footer-item {
+        display: flex;
+        padding: 20px;
+        justify-content: space-around;
+    }
+
+    .phone {
+        text-align: center;
+    }
+    .phone p,i{
+        color: #fff;
+    }
+</style>
+
+<body>
+    <section>
+        <div class="nav">
+            <div class="logo">
+                <h1>EDGECUT</h1>
+            </div>
+            <div class="item">
+                <ul>
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                    <li>FURNITURES</li>
+                    <li>BLOG</li>
+                    <LI>CONTACT US</LI>
+                </ul>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>LOGIN <i class="fa-solid fa-user"></i></li>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="sec2" id="home">
+            <div class="info">
+                <h3>FOR ALL YOUR FURNITURE NEEDS</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus quidem maiores perspiciatis, illo
+                    maxime voluptatem a itaque suscipit.</p>
+
+                <div class="btn">
+                    <button class="btn1">Contact Us</button>
+                    <button class="btn2">About Us</button>
+                </div>
+            </div>
+
+            <div class="imgs">
+                <img src="https://lh5.googleusercontent.com/proxy/BUd9tvJV2lcmH6oLZ2inVruBeew503Hf20pkoWyf4MKtiGwAioBotcFexwwVIx60XiMYlNO3vJcUYFssKFkcaGoUN4URARDQ"
+                    alt="">
+            </div>
+        </div>
+    </section>
+
+    <div class="sec3">
+        <div class="Furniture">
+            <h1>FURNITURE</h1>
+            <p>which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to
+                be sure there isn't an</p>
+        </div>
+
+        <div class="fur_card">
+            <div class="box">
+                <div class="photo">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqsQG4O6dVQMJw4rJZ0r0NF5SzT3R19GwGu7a8MKcjhrdyJGXd"
+                        alt="">
+                </div>
+                <div class="data">
+                    <h4>BROWN CHAIR DESIGN</h4>
+                    <div class="content">
+                        <P>$100.00</P>
+                        <P><a href="">BYE NOW</a></P>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="photo">
+                    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3HlQukXcoTehyRK_vC-ACJCEBh6DKrrNvm2AkjEGsEvq-v3Pi"
+                        alt="">
+                </div>
+                <div class="data">
+                    <h4>DOUBLE BED DESIGN</h4>
+                    <div class="content">
+                        <P>$100.00</P>
+                        <P><a href="">BYE NOW</a></P>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="photo">
+                    <img src="https://themewagon.github.io/EdgeCut/images/f3.png" alt="">
+                </div>
+                <div class="data">
+                    <h4>HOUSE CHAIR DESIGN</h4>
+                    <div class="content">
+                        <P>$100.00</P>
+                        <P><a href="">BYE NOW</a></P>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="photo">
+                    <img src="https://png.pngtree.com/element_our/20190602/ourlarge/pngtree-red-table-furniture-image_1397828.jpg"
+                        alt="">
+                </div>
+                <div class="data">
+                    <h4>BROWN TABLE DESIGN</h4>
+                    <div class="content">
+                        <P>$100.00</P>
+                        <P><a href="">BYE NOW</a></P>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="photo">
+                    <img src="https://img.pikbest.com/png-images/qianku/wooden-office-chair-illustration_2168892.png!sw800"
+                        alt="">
+                </div>
+                <div class="data">
+                    <h4>BROWN CHAIR DESIGN</h4>
+                    <div class="content">
+                        <P>$100.00</P>
+                        <P><a href="">BYE NOW</a></P>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="photo">
+                    <img src="https://png.pngtree.com/element_our/20190602/ourlarge/pngtree-yellow-dressing-table-image_1397827.jpg"
+                        alt="">
+                </div>
+                <div class="data">
+                    <h4>BROWN TABLE DESIGN</h4>
+                    <div class="content">
+                        <P>$100.00</P>
+                        <P><a href="">BYE NOW</a></P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sec4">
+        <div class="container">
+            <div class="img2">
+                <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEWxiiuhdegaoSPVPvy8RLBHXx7SZV6LKpDOPzhlJtraQGPg%2BOwXgFC5frn0Gb25TWG2IxLfl1fsV4KmbuRL61jzh8aT1v4fsZNHxy8wBaTsLLKApsn84kiQAW4%2BV%2FkM05ROBEs5LidGBAxZv4Rx1pPqaY4mh%2Bk3O3CsZ6C3SChh4d7B0dMPqjG7qJ%2FnFNcPdq6xUNw%2BgsPVOEoUwwYofGLMI3WPmuMu03R1KO5q5x3pKKYUiI%2FiWAZk13myb1v0IVDMwutgKqQ3RQ2h64iPqDAp9C4xPwV8yjLsDZvLndWyguvvpssGdJD4or1ZOTJ1CF8RHQcwyeJUIfftSNSQIpF0%2BwWgnDN0lSLyiRBYB5g61eVfLS2z2pcNn7u8v9OLdcNuCYUlA0WvB7GFmrrHBAtSneR8YA5b4qNjRCCZDsxOgL2hheRMq4iFp84Ro2lTqLh53qPwgODC0vHFfv9ykx6dUhLx4NBhaURhCHVKAd0Q40cW79%2BTTwXL1JH6vDbxEqYsInbtlHCVKWDQYxDNXfaBdThpjdl4cN4R6RHtNa0MpSvnqdT4ETSI1ide23ejyK36s19UwyN%2FAR74TZfKiX6OLZxyU9xtSKc8l8qe%2FbT1xOjM8VsYFrI%3D&sz=w512"
+                    alt="">
+            </div>
+
+            <div class="about">
+                <h3>ABOUT US</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolorem eum consequuntur ipsam
+                    repellat
+                    dolor soluta aliquid laborum, eius odit consectetur vel quasi in quidem, eveniet ab est corporis
+                    tempore.</p>
+
+                <div class="btn-1">
+                    <button class="btnone">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="blog">
+        <div class="head">
+            <h2>Latest Blog</h2>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="img-card">
+                    <img src="https://lh5.googleusercontent.com/proxy/RP2_gGKrwhxr8BM2MKQwul-cgRu-0LBVer3DeTskXLdmOUR_T2kjijnmjPROnQG2KbbASloMsZbwRFVhAAF8Y3RgDW_ZEMVgiFPH4QoN4JXLMchKDYB1xCXd-4ocaZOjeidQQZ3G2metmN1tGMaTeeblSoKKv_I-"
+                        alt="">
+                </div>
+                <div class="information">
+                    <h5>Look even slightly believable. if you are</h5>
+                    <p>alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable.</p>
+                    <div class="btn-2">
+                        <button class="btntwo">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-card">
+                    <img src="https://static.asianpaints.com/content/dam/asian_paints/blog/aphomes/best-bedroom-interior-design-ideas.jpg"
+                        alt="">
+                </div>
+                <div class="information">
+                    <h5>Anything embarrassing hidden in the middle</h5>
+                    <p>alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable.</p>
+                    <div class="btn-2">
+                        <button class="btntwo">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-card">
+                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTY9zzxa1rtUHkFLLJkXhLQFl3DBMUeRkU6YgklCtrB49LKxmif"
+                        alt="">
+                </div>
+                <div class="information">
+                    <h5>Molestias magni natus dolores odio commodi. Quaerat!</h5>
+                    <p>alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable.</p>
+                    <div class="btn-2">
+                        <button class="btntwo">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="testimonial-section">
+        <div class="testimonial">
+            <h1>TESTIMONIAL</h1>
+        </div>
+        <div class="testimonial-box">
+            <div class="client-img">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1ilKcZdWQg5UdtJ5LmXCDdklP3J3yDNl5P9ousgwSgZOnybpS"
+                    alt="">
+            </div>
+            <div class="card-info">
+                <i class="fa-solid fa-quote-left"></i>
+                <h2>Siaalya</h2>
+                <p> It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout.
+                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="contacts">
+            <div class="contact-us">
+                <h1>CONTACT US</h1>
+                <form>
+                    <div class="input-text">
+                        <input type="text" placeholder="Your Name" name="" id="">
+                    </div>
+                    <div class="input-text">
+                        <input type="text" placeholder="Phone Number" name="" id="">
+                    </div>
+                    <div class="input-text">
+                        <input type="emil" placeholder="Email" name="" id="">
+                    </div>
+                    <div class="input-text">
+                        <textarea placeholder="Message" name="" id="" cols="30" rows="4"></textarea>
+                    </div>
+
+                    <div class="btn-submit">
+                        <button>Send</button>
+                    </div>
+                </form>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12826.343508331154!2d74.08473486571806!3d17.426529556313554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc229b8a399f937%3A0xfe407257bf4229e2!2sBhosalewadi%2C%20Maharashtra%20415109!5e0!3m2!1sen!2sin!4v1724867142391!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-item">
+                <div class="phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>Call:+01245896752</p>
+                </div>
+                <div class="phone">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>Email:abc@gmail.com</p>
+                </div>
+                <div class="phone">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Location</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

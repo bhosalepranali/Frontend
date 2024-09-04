@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data</title>
+</head>
+<style>
+    section {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .box {
+        width: 90%;
+        text-align: center;
+    }
+
+    input,button{
+        margin: 5px 0px;
+        width: 100%;
+        padding: 10px;
+    }
+    button{
+        width: 104%;
+    }
+    h1{
+        text-align: center;
+    } 
+    .box img {
+        width: 200px;
+        height: 200px;
+    }
+    select{
+        width: 103%;
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <section>
+        <div class="box">
+            <input type="text" placeholder="Name" name="" id="">
+            <input type="text" placeholder="Email" name="" id="">
+            <input type="text" placeholder="Password" name="" id="">
+            <input type="text" placeholder="Contact" name="" id="">
+            <input type="text" placeholder="DOB" name="" id="">
+            <input type="text" placeholder="Address" name="" id="">
+            <input type="text" placeholder="img url" id="">
+            <select name="" id="" onchange="selectData(value)">
+                <option value="">Gender</option>
+                <option value="male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        
+            <button onclick="submitData()">Submit</button>
+        </div>
+        <div class="box">
+            <h1>XYZ</h1>
+            <h1>xyz@gmail.com</h1>
+            <h1>xyz@123</h1>
+            <h1>2145163256</h1>
+            <h1>14-03-2001</h1>
+            <h1>Pune</h1>
+            <h1>gender</h1>
+            <img src="" alt="">
+        </div>
+    </section>
+
+    <script>
+        function submitData() {
+            let name = document.getElementsByTagName('input')[0].value
+            let email = document.getElementsByTagName('input')[1].value
+            let pswd = document.getElementsByTagName('input')[2].value
+            let phone = document.getElementsByTagName('input')[3].value
+            let dob = document.getElementsByTagName('input')[4].value
+            let address = document.getElementsByTagName('input')[5].value
+            let gender =document.getElementsByTagName('input')[6].value
+            let img = document.getElementsByTagName('input')[7].value
+
+            document.getElementsByTagName('h1')[0].innerText = name
+            document.getElementsByTagName('h1')[1].innerText = email
+            document.getElementsByTagName('h1')[2].innerText = pswd
+            document.getElementsByTagName('h1')[3].innerText = phone
+            document.getElementsByTagName('img')[0].src = img
+            document.getElementsByTagName('h1')[4].innerText = dob
+            document.getElementsByTagName('h1')[5].innerText = address
+
+            console.log(name);
+        }
+        function selectData(){
+            let gender = document.getElementsByTagName('select')[0].value
+            document.getElementsByTagName('h1')[6].innerText = gender
+        }
+    </script>
+</body>
+
+</html>
